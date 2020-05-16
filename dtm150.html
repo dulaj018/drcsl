@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ 
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+    <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  
+    <div class="row">
+        <div class="col-xl-6 col-md-6">
+            <div class="single_blog">
+                <div class="blog_thumb">
+                     
+                        <img src="img/bike/dtm.jpg" alt="">
+                  
+                </div>
+   
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">DTM 150 </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <table id="myTable">
+                <tr class="header">
+                  <th style="width:60%;">DTM</th>
+                  <th style="width:40%;">DTM  150CC </th>
+                   
+                </tr>
+                <tr>
+                  <td>Engine </td>
+                  <td>2080*800*1160 (mm)</td>
+                   
+                </tr>
+                <tr>
+                  <td>Weigt</td>
+                  <td>128kg</td>
+                </tr>
+                <tr>
+                  <td>Starter</td>
+                  <td>Electric / kick</td>
+                </tr>
+                <tr>
+                  <td>Battry</td>
+                  <td>12V 5Ah</td>
+                </tr>
+                <tr>
+                  <td>Brake</td>
+                  <td>Front Brake : Disc <br>
+                      Rear Brake  : Disc</td>
+                </tr>
+                <tr>
+                  <td>Rim</td>
+                  <td>Front Rim : Alloy Rim <br>
+                      Rear Rim  : Alloy Rim </td>
+                </tr>
+                <tr>
+                  <td>Tire</td>
+                  <td>Front Tire : 110/70-17 <br>
+                      Rear Tire  : 130/70-17</td>
+                </tr>
+                <tr>
+                  <td>Gear</td>
+                  <td>5 Speed Gear System</td>
+                </tr>
+              </table>
+        </div>
+      
+        <div class="container">
+          <h2>Modal Example</h2>
+          <!-- Button to Open the Modal -->
+          
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <div class="single_blog">
+                        <div class="blog_thumb">
+                             
+                                <img src="img/bike/dtm.jpg" alt="">
+                          
+                        </div>
+           
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+          </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">DTM 150 </h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="myTable">
+                        <tr class="header">
+                          <th style="width:60%;">DTM</th>
+                          <th style="width:40%;">DTM  150CC </th>
+                           
+                        </tr>
+                        <tr>
+                          <td>Engine </td>
+                          <td>2080*800*1160 (mm)</td>
+                           
+                        </tr>
+                        <tr>
+                          <td>Weigt</td>
+                          <td>128kg</td>
+                        </tr>
+                        <tr>
+                          <td>Starter</td>
+                          <td>Electric / kick</td>
+                        </tr>
+                        <tr>
+                          <td>Battry</td>
+                          <td>12V 5Ah</td>
+                        </tr>
+                        <tr>
+                          <td>Brake</td>
+                          <td>Front Brake : Disc <br>
+                              Rear Brake  : Disc</td>
+                        </tr>
+                        <tr>
+                          <td>Rim</td>
+                          <td>Front Rim : Alloy Rim <br>
+                              Rear Rim  : Alloy Rim </td>
+                        </tr>
+                        <tr>
+                          <td>Tire</td>
+                          <td>Front Tire : 110/70-17 <br>
+                              Rear Tire  : 130/70-17</td>
+                        </tr>
+                        <tr>
+                          <td>Gear</td>
+                          <td>5 Speed Gear System</td>
+                        </tr>
+                      </table>
+                </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+ 
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/style 22.css">
+      <link rel="stylesheet" type="text/css" href="css/">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
